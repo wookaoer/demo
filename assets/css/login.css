@@ -47,9 +47,10 @@
     float: left;
 }
 .header-under {
-    background: url("../images/header-under.svg") no-repeat;
+    /*background: url("../images/header-under.svg") no-repeat;*/
     height: 8px;
     margin-top: 20px;
+    background-image: linear-gradient(-180deg, #FFE69D 0%, #FFC00A 100%);
 }
 .content {
     padding: 45px 0 65px 0;
