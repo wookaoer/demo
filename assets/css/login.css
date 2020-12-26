@@ -3,12 +3,20 @@
     color: #999999;
     font-family: PingFangSC-Regular;
 }
-.rem-active {
+.rem-active, .rem-active-img {
     display: inline-block;
     vertical-align: top;
 }
-.rem-active:active {
+.rem-active:hover {
+    color: #FFB901 !important;
+}
+.rem-active-img:active {
     border: 1px solid #D6D6D6;
+}
+.rem-active:active {
+    /*text-decoration: overline;*/
+    /*border: 1px solid #D6D6D6;*/
+    color: #FFB901 !important;
 }
 .header {
     overflow: hidden;
