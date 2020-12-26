@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="./assets/css/login.css">
 
     <!--[if lt IE 9]>
-    <script src="https://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <script src="./assets/js/html5shiv.min.js"></script>
+    <script src="./assets/js/respond.min.js"></script>
     <![endif]-->
     <script src="./assets/js/jquery.min.js"></script>
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
@@ -37,12 +37,15 @@
         </div>
         <div class="header-under"></div>
         <div class="content">
-            <div class="title">管理员登录</div>
             <form role="form" class="login-form form-horizontal">
+                <div>
+                    <div class="col-sm-2"></div>
+                    <div class="title col-sm-10">管理员登录</div>
+                </div>
                 <div class="form-group">
                     <label for="userName" class="col-sm-2 control-label">账&nbsp;&nbsp;&nbsp;号:</label>
                     <div class="col-sm-10">
-                        <input class="form-control input-lg" id="userName" placeholder="">
+                        <input type="text" class="form-control input-lg" id="userName" placeholder="">
                     </div>
                 </div>
                 <div class="form-group">
@@ -54,7 +57,7 @@
                 <div class="form-group">
                     <label for="mobile" class="col-sm-2 control-label">手&nbsp;&nbsp;&nbsp;机:</label>
                     <div class="col-sm-10">
-                        <input type="number" class="form-control mobile-input input-lg" id="mobile" placeholder="">
+                        <input type="tel" class="form-control mobile-input input-lg" id="mobile" placeholder="">
                         <input class="btn btn-default send-mobile-code input-lg" type="button" value="发送验证码">
                     </div>
                 </div>
@@ -62,7 +65,7 @@
                     <label for="captcha" class="col-sm-2 control-label">验证码:</label>
                     <div class="col-sm-10">
                         <input type="number" class="form-control mobile-captcha input-lg" id="captcha" placeholder="手机码">
-                        <input type="number" class="form-control tx-captcha input-lg"  placeholder="图形码">
+                        <input type="text" class="form-control tx-captcha input-lg"  placeholder="图形码">
                         <a class="img-captcha">
                             <img width="78" height="34" src="./assets/images/capcha.png" alt="">
                         </a>
