@@ -3,8 +3,12 @@
     color: #999999;
     font-family: PingFangSC-Regular;
 }
-a:active {
-    border: 1px solid red;
+.rem-active {
+    display: inline-block;
+    vertical-align: top;
+}
+.rem-active:active {
+    border: 1px solid #fff;
 }
 .header {
     overflow: hidden;
