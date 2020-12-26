@@ -15,6 +15,7 @@
     <script src="./assets/js/jquery.min.js"></script>
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./assets/js/Gverify.js"></script>
 </head>
 <body>
 <div id="#root">
@@ -66,9 +67,9 @@
                     <div class="col-sm-10">
                         <input type="tel" class="form-control mobile-captcha input-lg" id="captcha" placeholder="手机码">
                         <input type="email" class="form-control tx-captcha input-lg"  placeholder="图形码">
-                        <a class="img-captcha">
-                            <img width="78" height="34" src="./assets/images/capcha.png" alt="">
-                        </a>
+                        <div class="img-captcha">
+                            <div id="img-captcha"></div>
+                        </div>
                     </div>
                 </div>
                 <div class="form-group error-wrapper">
@@ -87,7 +88,7 @@
         <div class="footer">
             <div class="copyright">
                 Copyright @ 2017 点菜宝贝 Diancai Baobei.com All Rights Reserved.
-                <a href="">
+                <a href="" class="rem-active gold">
                     <img src="./assets/images/gold.png" alt="">
                 </a>
             </div>
@@ -95,4 +96,7 @@
     </div>
 </div>
 </body>
+<script>
+    var verifyCode = new GVerify("img-captcha");
+</script>
 </html>
