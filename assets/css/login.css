@@ -2,21 +2,35 @@
     padding: 22px 63px;
     color: #999999;
     font-family: PingFangSC-Regular;
+    -moz-user-select:none;/*火狐*/
+    -webkit-user-select:none;/*webkit浏览器*/
+    -ms-user-select:none;/*IE10*/
+    -khtml-user-select:none;/*早期浏览器*/
+    user-select:none;
 }
 .rem-active, .rem-active-img {
     display: inline-block;
     vertical-align: top;
 }
+#logo.active .brand {
+    color: #343434;
+}
+#logo.active .oval {
+    background: #343434;
+}
 .rem-active:hover {
-    color: #FFB901 !important;
+    /*color: #FFB901 !important;*/
 }
 .rem-active-img:active {
-    border: 1px solid #D6D6D6;
+    color: #000 !important;
+    /*font-weight: bold;*/
+    /*border: 1px solid #D6D6D6;*/
 }
 .rem-active:active {
     /*text-decoration: overline;*/
     /*border: 1px solid #D6D6D6;*/
-    color: #FFB901 !important;
+    color: #343434 !important;
+    /*font-weight: bold;*/
 }
 .header {
     overflow: hidden;
@@ -52,14 +66,18 @@
     height: 14px;
     background: #D8D8D8;
     margin: 3px 13px 0;
-    float: left;
+    display: inline-block;
 }
-.header .user-info  a{
+.header .user-info  .rem-tag{
     color: #999999;
     font-size: 14px;
     cursor: pointer;
     text-decoration: none;
-    float: left;
+    -moz-user-select:none;/*火狐*/
+    -webkit-user-select:none;/*webkit浏览器*/
+    -ms-user-select:none;/*IE10*/
+    -khtml-user-select:none;/*早期浏览器*/
+    user-select:none;
 }
 .header-under {
     background: url("../images/header-under.png") no-repeat;
@@ -141,6 +159,7 @@
     vertical-align: top;
     width: 100px;
     height: 46px;
+    cursor: pointer;
     /*top: -3px;*/
 }
 .send-mobile-code:focus,
@@ -162,11 +181,11 @@
     float: right;
 }
 .footer::before {
-    display: block;
-    content: '';
-    height: 1px;
-    background: #D8D8D8;
-    margin-bottom: 25px;
+    /*display: block;*/
+    /*content: '';*/
+    /*height: 1px;*/
+    /*background: #D8D8D8;*/
+    /*margin-bottom: 25px;*/
 }
 .footer .copyright {
     position: relative;
@@ -176,4 +195,11 @@
     position: absolute;
     right: 0;
     top: -10px;
+}
+.divider {
+    display: block;
+    content: '';
+    height: 1px;
+    background: #D8D8D8;
+    margin-bottom: 25px;
 }

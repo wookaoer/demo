@@ -15,13 +15,14 @@
     <script src="./assets/js/jquery.min.js"></script>
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./assets/js/jquery.placeholder.min.js"></script>
     <script src="./assets/js/Gverify.js"></script>
 </head>
-<body>
+<body onselectstart="return false">
 <div id="#root">
     <div class="container">
         <div class="header">
-            <a href="" class="rem-active-img">
+            <a href="javascript:void(0);" class="rem-active-img" id="logo">
                 <div class="logo">
                     <div class="logo-img">
                         <img src="./assets/images/logo.png" alt="">
@@ -31,9 +32,9 @@
                 </div>
             </a>
             <div class="user-info">
-                <a href="" class="rem-active">PC客户端</a>
+                <a class="rem-active rem-tag">PC客户端</a>
                 <span class="split"></span>
-                <a href="" class="rem-active">手机客户端</a>
+                <a class="rem-active rem-tag">手机客户端</a>
             </div>
         </div>
         <div class="header-under"></div>
@@ -58,17 +59,19 @@
                 <div class="form-group">
                     <label for="mobile" class="col-sm-2 control-label">手&nbsp;&nbsp;&nbsp;机:</label>
                     <div class="col-sm-10">
-                        <input type="tel" class="form-control mobile-input input-lg" id="mobile" placeholder="">
+                        <input type="tel" class="form-control mobile-input input-lg" id="mobile" placeholder="请输入手机号">
                         <input class="btn btn-default send-mobile-code input-lg" type="button" value="发送验证码">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="captcha" class="col-sm-2 control-label">验证码:</label>
+                    <label for="mobile-captcha" class="col-sm-2 control-label">验证码:</label>
                     <div class="col-sm-10">
-                        <input type="tel" class="form-control mobile-captcha input-lg" id="captcha" placeholder="手机码">
-                        <input type="email" class="form-control tx-captcha input-lg"  placeholder="图形码">
+                        <input type="tel" class="form-control mobile-captcha input-lg" id="mobile-captcha" placeholder="图形验证码3">
+                        <input type="email" id="image-captcha" class="form-control tx-captcha input-lg">
                         <div class="img-captcha">
-                            <div id="img-captcha"></div>
+                            <div id="img-captcha-wrap">
+                                <img width="90" height="35" src="https://www.to8to.com/passport.php?t=1608994159" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -86,6 +89,7 @@
             </form>
         </div>
         <div class="footer">
+            <p class="divider"></p>
             <div class="copyright">
                 Copyright @ 2017 点菜宝贝 Diancai Baobei.com All Rights Reserved.
                 <a href="" class="rem-active-img gold">
@@ -97,6 +101,21 @@
 </div>
 </body>
 <script>
-    var verifyCode = new GVerify("img-captcha");
+    // var verifyCode = new GVerify("img-captcha");
+    $(document).ready(function() {
+        $('input').placeholder('');
+
+        $('#img-captcha-wrap').on('click', function () {
+            var captchaUrl = 'https://www.to8to.com/passport.php?t=' + new Date().getTime()
+            $('#img-captcha-wrap > img').attr('src', captchaUrl)
+        });
+
+        $('#logo').on('mousedown', function() {
+            $(this).addClass('active')
+        })
+        $('#logo').on('mouseup', function() {
+            $(this).removeClass('active')
+        })
+    })
 </script>
 </html>
