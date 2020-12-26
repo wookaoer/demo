@@ -19,6 +19,9 @@
 #logo.active .oval {
     background: #343434;
 }
+.logo-wrap {
+    cursor: pointer;
+}
 .rem-active:hover {
     /*color: #FFB901 !important;*/
 }
