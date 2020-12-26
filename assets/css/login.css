@@ -1,0 +1,161 @@
+.container {
+    padding: 22px 63px;
+    color: #999999;
+    font-family: PingFangSC-Regular;
+}
+.header {
+    overflow: hidden;
+    clear: both;
+}
+.header .logo {
+    float: left;
+}
+.header div {
+    float: left;
+}
+.header .oval {
+    background: #DDDDDD;
+    width: 7px;
+    height: 7px;
+    margin-top: 54px;
+    margin-left: 22px;
+    border-radius: 4px;
+}
+.header .brand {
+    margin-left: 24px;
+    margin-top: 40px;
+    font-size: 25px;
+    color: #999999;
+    font-family: FZDHTJW--GB1-0;
+}
+.header .user-info {
+    float: right;
+    margin-top: 48px;
+}
+.header .user-info .split {
+    width: 1px;
+    height: 14px;
+    background: #D8D8D8;
+    margin: 3px 13px 0;
+    float: left;
+}
+.header .user-info  a{
+    color: #999999;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    float: left;
+}
+.header-under {
+    background: url("../images/header-under.svg") no-repeat;
+    height: 8px;
+    margin-top: 20px;
+}
+.content {
+    padding: 45px 0 65px 0;
+    /*text-align: center;*/
+}
+.content .title {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 35px;
+}
+.content .login-form {
+    width: 467px;
+    margin: 0 auto;
+}
+.content .login-form label {
+    color: #343434;
+    font-family: 'PingFangSC-Regular';
+    font-size: 19.2px;
+    font-weight: 100;
+    line-height: 46px;
+    padding: 0;
+}
+.content .login-form .form-control {
+    height: 46px;
+    font-size: 14px;
+}
+.content .form-group {
+    margin-bottom: 19.2px;
+}
+.content .mobile-input {
+    width: 270px;
+    display: inline-block;
+}
+.content .send-mobile-code {
+    width: 98px;
+    line-height: 44px;
+    background: #fff;
+    color: #999999;
+    padding: 0 9px;
+    position: relative;
+    top: -2px;
+    margin-left: 10px;
+}
+.send-mobile-code:focus {
+    outline:0;
+}
+.submit-btn {
+    background: #FFB901;
+    line-height: 55px;
+    color: #fff;
+    width: 100%;
+    padding: 0;
+    border: none;
+    font-size: 22px;
+    font-weight: 100;
+    border-radius: 3.6px;
+}
+.mobile-captcha {
+    display: inline-block;
+    width: 128px;
+}
+.tx-captcha {
+    display: inline-block;
+    width: 128px;
+    margin-left: 10px;
+}
+.img-captcha {
+    border: 1px solid #D6D6D6;
+    border-radius: 3.6px;
+    padding: 5px 10px;
+    display: inline-block;
+    margin-left: 8px;
+    position: relative;
+    top: -3px;
+}
+.send-mobile-code:focus,
+.submit-btn:focus{
+    outline:0;
+}
+.error-wrapper {
+    overflow: hidden;
+    clear: both;
+    padding-bottom: 17px;
+    margin-bottom: 0 !important;
+}
+.login-error {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #FF3742;
+    text-align: justify;
+    /*padding: 0;*/
+    float: right;
+}
+.footer::before {
+    display: block;
+    content: '';
+    height: 1px;
+    background: #D8D8D8;
+    margin-bottom: 25px;
+}
+.footer .copyright {
+    position: relative;
+    text-align: center;
+}
+.footer .copyright img {
+    position: absolute;
+    right: 0;
+    top: -10px;
+}

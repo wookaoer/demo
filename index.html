@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css" >
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="./assets/css/login.css">
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div id="#root">
+    <div class="container container-fiuled">
+        <div class="header">
+            <a href="">
+                <div class="logo">
+                    <div class="logo-img">
+                        <img src="./assets/images/logo.svg" alt="">
+                    </div>
+                    <div class="oval"></div>
+                    <div class="brand">后台管理系统</div>
+                </div>
+            </a>
+            <div class="user-info">
+                <a href="">PC客户端</a>
+                <span class="split"></span>
+                <a href="">手机客户端</a>
+            </div>
+        </div>
+        <div class="header-under"></div>
+        <div class="content">
+            <div class="title">管理员登录</div>
+            <form role="form" class="login-form form-horizontal">
+                <div class="form-group">
+                    <label for="userName" class="col-sm-2 control-label">账&nbsp;&nbsp;&nbsp;号:</label>
+                    <div class="col-sm-10">
+                        <input class="form-control input-lg" id="userName" placeholder="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="col-sm-2 control-label">密&nbsp;&nbsp;&nbsp;码:</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control input-lg" id="password" placeholder="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="mobile" class="col-sm-2 control-label">手&nbsp;&nbsp;&nbsp;机:</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control mobile-input input-lg" id="mobile" placeholder="">
+                        <input class="btn btn-default send-mobile-code input-lg" type="button" value="发送验证码">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="captcha" class="col-sm-2 control-label">验证码:</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control mobile-captcha input-lg" id="captcha" placeholder="手机码">
+                        <input type="number" class="form-control tx-captcha input-lg"  placeholder="图形码">
+                        <a class="img-captcha">
+                            <img width="78" height="34" src="./assets/images/capcha.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="form-group error-wrapper">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-10 login-error">
+                        账号或密码不正确
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="submit-btn">登录</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="footer">
+            <div class="copyright">
+                Copyright @ 2017 点菜宝贝 Diancai Baobei.com All Rights Reserved.
+                <a href="">
+                    <img src="./assets/images/gold.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
