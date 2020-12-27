@@ -1,6 +1,6 @@
 .placeholder { color: #999999; }
 .container {
-    padding: 22px 63px;
+    padding: 22px 0;
     color: #999999;
     font-family: PingFangSC-Regular;
     -moz-user-select:none;/*火狐*/
@@ -8,6 +8,7 @@
     -ms-user-select:none;/*IE10*/
     -khtml-user-select:none;/*早期浏览器*/
     user-select:none;
+    width: 90%;
 }
 .rem-active, .rem-active-img {
     display: inline-block;
